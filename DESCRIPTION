@@ -1,0 +1,22 @@
+Package: barrilleaux.pkg
+Title: An R package for processing crabs data
+Version: 0.1
+Authors@R: c(
+  person(given = "Christina", 
+          family = "Barrilleaux", 
+          role = c("cre", "aut"), 
+          email = "christina.barrilleaux@selu.edu")
+          )
+Description: This R package is used to analysis a crabs dataframe to visualize and evaluate color, size, location, and other characteristics of crabs caught in a crabbing contest. This package can be used to plot, compare, and perform statistical analysis about connections between characteristics of crabs to make conclusions about location and physcial characteristics of crabs.
+License: MIT + file LICENSE
+Depends:
+  R (>= 2.10)
+Imports:
+  tidyverse, broom, ggplot2
+RoxygenNote: 7.1.1
+Suggests:
+  knitr,
+  rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)

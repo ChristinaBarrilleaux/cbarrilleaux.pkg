@@ -1,0 +1,13 @@
+---
+title: "CrabsTutorial"
+author: "Christina Barrilleaux"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This package is used to process crabs data. This data is from a crabbing contest and includes various physical charateristics and location information. 
+It includes functions to plot data, statistical analysis, and more. 

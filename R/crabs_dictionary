@@ -1,0 +1,19 @@
+Dataset: crabs.csv
+
+Columns: 
+
+color: This is an observation that indicates the color (e.g. blue or orange) of the crab. Column type: Character.
+
+sex: An obersvation that indicates whether the crab is male or female sex. Column type: Character.
+
+frontal_lobe: A measurement (typically in mm, although this dataset does not specify) of how large the frontal lobe of the brain is in each crab. Column type: numeric.
+
+rear_width: A measurement of the rear portion of the crab's carapace. Column type: numeric.
+
+carapace_length: A measurement of the carapace from the head to the rear along the widest portion of the crab. Column type: numeric.
+
+carapace_width: A measuremnt of the carapace from left to right of the carapace along the widest portion of the crab. Column type: numeric. 
+
+body_depth: A measuremnt of the carapace depth from the top of the carapace to the bottom along the deepest portion of the crab. Column type: numeric. 
+
+Latitude: The geographical location of where the crabs were caught and measured. Column type: numeric (however, it indicates a location and not a measurement).
