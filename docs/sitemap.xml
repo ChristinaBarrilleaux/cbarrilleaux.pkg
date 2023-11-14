@@ -19,6 +19,21 @@
     <loc>/index.html</loc>
   </url>
   <url>
+    <loc>/reference/clean.html</loc>
+  </url>
+  <url>
+    <loc>/reference/crab_plot.html</loc>
+  </url>
+  <url>
+    <loc>/reference/crabs_model.html</loc>
+  </url>
+  <url>
     <loc>/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>/reference/lat_chr.html</loc>
+  </url>
+  <url>
+    <loc>/reference/select_col.html</loc>
   </url>
 </urlset>

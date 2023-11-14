@@ -12,5 +12,9 @@
 clean <- function(data) {
   clean <- data %>% 
     na.omit(data)
-  return(clean)
+  if (sum(is.na(data)) == 0){
+    return(clean)
+  } else {
+    print("NAs still present.")
+  }
 }
