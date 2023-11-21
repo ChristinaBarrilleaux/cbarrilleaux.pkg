@@ -11,10 +11,10 @@
 
 lat_chr <- function(data, column) {
   location <- data %>% 
-    mutate(latitude = as.character({{column}})) %>% 
-    if (is.character({{column}})) {
-      return(location)
-    } else {
-      print("Try again.")
-    }
+    mutate(latitude = as.character({{column}}))
+  if (class(location$latitude) == "character") {
+    return(location)
+  } else {
+    print("Try again.")
+  }
 }
