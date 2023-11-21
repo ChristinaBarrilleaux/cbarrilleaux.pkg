@@ -4,14 +4,14 @@
 \alias{lm_fun}
 \title{Function for linear models with crabs data}
 \usage{
-lm_fun(df, dependent, independent_cols)
+lm_fun(crab_data, dependent, independent_cols)
 }
 \arguments{
-\item{df}{the data set crabs}
-
 \item{dependent}{The column for the dependent variable}
 
 \item{independent_cols}{the column for the independent variable}
+
+\item{df}{the data set crabs}
 }
 \value{
 Linear model for comparisons in crabs data

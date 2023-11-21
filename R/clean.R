@@ -9,11 +9,11 @@
 #' 
 #' @export 
 
-clean <- function(data) {
-  clean <- data %>% 
+clean <- function(crab_data) {
+  clean_data <- crab_data %>% 
     na.omit(data)
-  if (sum(is.na(data)) == 0){
-    return(clean)
+  if (sum(is.na(crab_data)) == 0){
+    return(clean_data)
   } else {
     print("NAs still present.")
   }

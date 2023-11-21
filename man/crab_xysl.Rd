@@ -4,14 +4,14 @@
 \alias{crab_xysl}
 \title{Function Plots Crab Data}
 \usage{
-crab_xysl(data, columnx, columny)
+crab_xysl(crab_data, columnx, columny)
 }
 \arguments{
-\item{data}{data frame being used}
-
 \item{columnx}{selected column for x axis}
 
 \item{columny}{selected column for y axis}
+
+\item{data}{data frame being used}
 }
 \value{
 plot The plot visualizing crab characteristics with sex and color

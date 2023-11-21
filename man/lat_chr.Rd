@@ -4,12 +4,12 @@
 \alias{lat_chr}
 \title{Function to mutate the location from numeric to character}
 \usage{
-lat_chr(data, column)
+lat_chr(crab_data, column)
 }
 \arguments{
-\item{data}{The data set crabs}
-
 \item{column}{Column Latitude}
+
+\item{data}{The data set crabs}
 }
 \value{
 New column with Latitude as a character

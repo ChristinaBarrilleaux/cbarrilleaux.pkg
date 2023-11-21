@@ -11,8 +11,8 @@
 #' 
 #' @export
 
-crab_xysl <- function(data, columnx, columny){
-  clean_data <- data %>%
+crab_xysl <- function(crab_data, columnx, columny){
+  clean_data <- crab_data %>%
     na.omit()
   if (sum(is.na(clean_data)) == 0){
     plot <- clean_data %>%

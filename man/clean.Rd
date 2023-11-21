@@ -4,7 +4,7 @@
 \alias{clean}
 \title{Function cleans data}
 \usage{
-clean(data)
+clean(crab_data)
 }
 \arguments{
 \item{data}{The data set being cleaned}

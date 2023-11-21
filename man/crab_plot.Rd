@@ -4,16 +4,16 @@
 \alias{crab_plot}
 \title{Comparison plot for two numeric columns}
 \usage{
-crab_plot(data, columnx, columny, columnz)
+crab_plot(crab_data, columnx, columny, columnz)
 }
 \arguments{
-\item{data}{The data set crabs}
-
 \item{columnx}{Column for X value}
 
 \item{columny}{Column for Y value}
 
 \item{columnz}{Column for z value}
+
+\item{data}{The data set crabs}
 }
 \value{
 X-Y-Z plot

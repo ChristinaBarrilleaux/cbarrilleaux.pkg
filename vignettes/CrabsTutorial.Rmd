@@ -9,5 +9,95 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-This package is used to process crabs data. This data is from a crabbing contest and includes various physical charateristics and location information. 
-It includes functions to plot data, statistical analysis, and more. 
+This package is used to process crabs data. This data is from a crabbing contest and includes various physical characteristic and location information. It includes functions to plot data, statistical analysis, and more.
+
+## Required Packages
+
+```{r}
+devtools::install_github("ChristinaBarrilleaux/cbarrilleaux.pkg")
+```
+
+## Required Package Installations
+
+```{r}
+install.packages("tidyverse")
+install.packages("ggplot2")
+#The following package is for downloading data sets from Google Sheets. 
+install.packages("googlesheets4")
+```
+
+## Activating R Friendly Packages
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+```
+
+## Activating and Using the Package: googlesheets4
+
+```{r}
+#install.packages("googlesheets4") if not done so already
+
+library(googlesheets4)
+
+googlesheets4::gs4_deauth() 
+#Tells R this data is public and no authentication is required. 
+
+```
+
+## Downloading the Crabs Data Set
+
+This data set was collected from a crabbing contest in the northern hemisphere. In this data set there are several crab measurements such as carapace_length, carapace_width, body_depth, frontal_lobe, and other observed characteristics of the crabs such as: color, sex, and the Latitude they were caught. To download, user can use the following command:
+
+```{r}
+crabs <- read_sheet("https://docs.google.com/spreadsheets/d/1-JmNgwLRVzF71jo0RMbkJ__xPuUtQbP-QRhZ8KDOsQA/edit?usp=sharing")
+
+#It is recommended to save the data set to a variable when downloading it. "crabs" is a customisable variable name and users can change it as they wish.
+```
+
+## Function: Clean
+
+To avoid analysis of any data set being hindered by the presence of NA values, this nonspecific function allows users to clean any data set with a simple command. It is recommended that the user assign the data to a variable.
+
+```{r}
+library(barrilleaux.pkg)
+crabs <- clean(crabs)
+```
+
+## Function: crab_plot
+
+The function crab_plot allows users to utilize ggplot2 without the hassle of typing in all the arguments.
+
+This function is best used when making quick comparisons between different columns in the crabs data set but it is inclusive to other data sets. To use this function, enter in the arguments: the name of the data set, the column for the x-axis, the column for the y-axis.
+
+```{r}
+crab_plot(data, x, y) 
+```
+
+## Function: lm_fun
+
+The function crabs_model allows users to perform quick and easy linear models for the crabs data set or other data sets. It allows users to use any data set and quickly generate a linear model without the hassel of following up with the summary() command. To use this function, type the function and the arguments: data set, dependent variable, independent variable.
+
+```{r}
+lm_fun(df, dependent, independent_cols)
+```
+
+## Function: crabs_xysl
+
+The function crabs_xysl allows users to utilize ggplot2 without the hassle of typing in all the arguments. The function yields a facet plot to compare differences between crab sexes and is color coded according to the crab color.
+
+This function is best used when making simple comparisons between different columns in the crabs data set with the addition of sex and color characteristics but it is not inclusive to other data sets.
+
+To use this function, enter in the arguments: the name of the data set, the column for the x-axis, the column for the y-axis. The sex and color are built into the function.
+
+```{r}
+crab_xysl(data, columnx, columny)
+```
+
+## Function: lat_chr
+
+This function is specific to the crabs data set and allows users to change the Latitude column from numeric to character using the mutate function while keeping a numeric Latitude column. This allows users to preform more in depth analysis on crabs data set with more statistical functions. The new column will be named "latitude". To use this function, type in the function with the arguments: data set, column being mutated.
+
+```{r}
+lat_chr(data, column)
+```

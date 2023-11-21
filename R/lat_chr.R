@@ -9,8 +9,8 @@
 #'
 #' @export
 
-lat_chr <- function(data, column) {
-  location <- data %>% 
+lat_chr <- function(crab_data, column) {
+  location <- crab_data %>% 
     mutate(latitude = as.character({{column}}))
   if (class(location$latitude) == "character") {
     return(location)
@@ -18,3 +18,4 @@ lat_chr <- function(data, column) {
     print("Try again.")
   }
 }
+
