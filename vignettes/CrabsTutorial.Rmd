@@ -71,15 +71,15 @@ The function crab_plot allows users to utilize ggplot2 without the hassle of typ
 This function is best used when making quick comparisons between different columns in the crabs data set but it is inclusive to other data sets. To use this function, enter in the arguments: the name of the data set, the column for the x-axis, the column for the y-axis.
 
 ```{r}
-crab_plot(data, x, y) 
+crab_plot(data, x, y, z) 
 ```
 
-## Function: lm_fun
+## Function: lm_function
 
-The function crabs_model allows users to perform quick and easy linear models for the crabs data set or other data sets. It allows users to use any data set and quickly generate a linear model without the hassel of following up with the summary() command. To use this function, type the function and the arguments: data set, dependent variable, independent variable.
+The function crabs_model allows users to perform quick and easy linear models for the crabs data set or other data sets. It allows users to use any data set and quickly generate a linear model without the hassle of following up with the summary() command. To use this function, type the function and the arguments: data set, dependent variable, independent variable.
 
 ```{r}
-lm_fun(df, dependent, independent_cols)
+lm_function(df, dependent, independent_cols)
 ```
 
 ## Function: crabs_xysl
