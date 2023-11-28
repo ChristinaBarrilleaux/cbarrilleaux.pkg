@@ -22,6 +22,7 @@ devtools::install_github("ChristinaBarrilleaux/cbarrilleaux.pkg")
 ```{r}
 install.packages("tidyverse")
 install.packages("ggplot2")
+install.packages("devtools")
 #The following package is for downloading data sets from Google Sheets. 
 install.packages("googlesheets4")
 ```
@@ -31,6 +32,7 @@ install.packages("googlesheets4")
 ```{r}
 library(tidyverse)
 library(ggplot2)
+library(devtools)
 ```
 
 ## Activating and Using the Package: googlesheets4

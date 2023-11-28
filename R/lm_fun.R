@@ -10,10 +10,10 @@
 #'
 #' @export
 
-lm_fun <- function(crab_data, dependent, independent_cols) {
-  model <- crab_data %>% 
+lm_function <- function(df, dependent, independent_cols) {
+  model <- df %>% 
     select(a = {{dependent}}, {{independent_cols}}) %>% 
-    lm(a~., crab_data = .) %>% 
+    lm(a~., data = .) %>% 
     summary()
   if (sum(is.na(df)) == 0){
     return(model)
